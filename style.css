@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --h1: 40px;
+  --h2: 36px;
+  --h3: 32px;
+  --h4: 28px;
+  --h5: 24px;
+  --h6: 20px;
+  --btn: 1rem;
+  --nav: 14px;
+  --body-text: 12px;
+  /* Font Family */
+  --heading-font: "Bebas Neue", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  /* Color */
+  --primary-color: #eeee00;
+  --secondary-color: #1b0303;
+  --red-color: #ed1b24;
+  --dark-blue-color: #000060;
+  --white-color: #fcfcfc;
+  /* Font Weight */
+  --regular: 400;
+  --bold: 700;
+}
+.navbar--navbar {
+  margin-top: 28px;
+}
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1232px;
+  margin-inline: auto;
+  align-items: center;
+}
+.logo-container-content-container {
+  display: flex;
+  gap: 24px;
+}
+.logo-container-content {
+  display: flex;
+  max-height: 1rem;
+  gap: 12px;
+  align-items: center;
+}
+.nav-menu-container {
+  margin-top: 28px;
+  padding: 20px 57.75px;
+  background-color: var(--secondary-color);
+}
+.menu-container {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.menu-item_link {
+  color: var(--white-color);
+  text-decoration: none;
+  font: var(--regular) var(--btn) var(--body-font);
+}
+.menu-item_link:hover {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.menu-item_link:hover .fa-caret-down {
+  transform: rotate(-180deg);
+}
+.menu-item_link_dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 1rem 56px;
+  max-width: 656px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-item:hover .dropdown-menu {
+  display: flex;
+}
+.dropdown-menu-item_link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.dropdown-menu-item_link:hover {
+  color: var(--primary-color);
+  font-weight: 700;
+}
