@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 :root {
-  --h1: 40px;
-  --h2: 36px;
-  --h3: 32px;
-  --h4: 28px;
-  --h5: 24px;
-  --h6: 20px;
+  --h1: 2.5rem;
+  --h2: 2.25rem;
+  --h3: 2rem;
+  --h4: 1.75;
+  --h5: 1.5rem;
+  --h6: 1.25rem;
   --btn: 1rem;
-  --nav: 14px;
-  --body-text: 12px;
+  --nav: 0.875rem;
+  --body-text: 0.75rem;
   /* Font Family */
   --heading-font: "Bebas Neue", sans-serif;
   --body-font: "Roboto", sans-serif;
@@ -28,73 +30,1915 @@
   --regular: 400;
   --bold: 700;
 }
-.navbar--navbar {
-  margin-top: 28px;
+
+/*  */
+.heading--h1 {
+  font: var(--regular) var(--h1) var(--heading-font);
 }
+
+.heading--h2 {
+  font: var(--regular) var(--h2) var(--heading-font);
+}
+
+.heading--h3 {
+  font: var(--regular) var(--h3) var(--heading-font);
+}
+
+.heading--h5 {
+  font: var(--regular) var(--h5) var(--heading-font);
+}
+
+.heading--h6 {
+  font: var(--regular) var(--h6) var(--heading-font);
+}
+
+.card-about-member-title {
+  font: var(--bold) var(--h6) var(--body-font);
+}
+
+.card-council-title {
+  font: var(--regular) var(--h6) var(--body-font);
+}
+
+.card-zone-title {
+  font: var(--regular) var(--btn) var(--heading-font);
+}
+
+.card-founder-title {
+  font: var(--regular) var(--btn) var(--body-font);
+}
+
+.body_text--p {
+  font: var(--regular) var(--body-text) var(--body-font);
+}
+
+.navbar--navbar {
+  margin-top: 1.75rem;
+}
+
 .logo-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1232px;
+  max-width: 77rem;
   margin-inline: auto;
   align-items: center;
+  flex-wrap: wrap;
+  width: 98%;
 }
+
 .logo-container-content-container {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
 }
+
 .logo-container-content {
   display: flex;
   max-height: 1rem;
-  gap: 12px;
+  gap: 0.75rem;
   align-items: center;
+  color: var(--secondary-color);
+  text-decoration: none;
+  flex-wrap: wrap;
 }
+
 .nav-menu-container {
-  margin-top: 28px;
-  padding: 20px 57.75px;
+  margin-top: 1.75rem;
+  padding: 1.25rem 1.734rem;
   background-color: var(--secondary-color);
 }
+
 .menu-container {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2.5rem;
 }
+
 .menu-item_link {
   color: var(--white-color);
   text-decoration: none;
   font: var(--regular) var(--btn) var(--body-font);
 }
+
+.menu-item_link.active,
 .menu-item_link:hover {
   color: var(--primary-color);
   font-weight: 700;
 }
+
 .menu-item_link:hover .fa-caret-down {
   transform: rotate(-180deg);
 }
+
 .menu-item_link_dropdown {
   display: flex;
   align-items: center;
   position: relative;
-  gap: 8px;
+  gap: 0.5rem;
 }
+
 .dropdown-menu {
   display: none;
   position: absolute;
   list-style: none;
-  padding: 1rem 56px;
-  max-width: 656px;
+  padding: 1rem 0.75rem;
+  max-width: 41rem;
   background-color: var(--secondary-color);
   color: var(--white-color);
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
+  z-index: 999;
 }
+
 .menu-item:hover .dropdown-menu {
   display: flex;
 }
+
+.dropdown-menu.open {
+  display: flex;
+}
+
 .dropdown-menu-item_link {
   color: var(--white-color);
   text-decoration: none;
 }
+
+.dropdown-menu-item_link.active,
 .dropdown-menu-item_link:hover {
   color: var(--primary-color);
   font-weight: 700;
+}
+
+.mobile-view--nav {
+  display: none;
+  position: relative;
+}
+
+.mobile-view-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 62.5rem;
+  margin-inline: auto;
+  padding-block: 1.75rem;
+  width: 98%;
+}
+
+.nav-mobile-menu-container {
+  padding: 1.25rem 3.125rem;
+  background-color: var(--secondary-color);
+  max-width: 31.25rem;
+  margin-inline: auto;
+  justify-content: end;
+  position: absolute;
+  z-index: 999;
+  /* right: 0; */
+  display: none;
+  top: 6rem;
+  transition: right 0.4s ease-in;
+}
+
+.nav-mobile-menu-container.open {
+  display: flex;
+  right: 0;
+}
+
+.nav-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo-mobilecontainer-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo-mobile-container-content {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* Footer */
+.footer-bg_color {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  width: 100%;
+  margin-top: 8rem;
+  min-height: 24.375rem;
+}
+
+.footer-container {
+  padding-top: 3.875rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 6.125rem;
+  flex-wrap: wrap;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+}
+
+.footer-heading {
+  font: var(--bold) var(--btn) var(--body-font);
+}
+
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  color: var(--white-color);
+  font: var(--regular) var(--btn) var(--body-font);
+}
+
+.footer-social-menu-container {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.footer-hr {
+  margin-top: 3.875rem;
+}
+
+.footer-copyright-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.125rem;
+}
+
+.header--img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 20.875rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Home page */
+/* .carosuel-hero-section{}
+.carosuel-hero-container{}*/
+.carousel-background--img {
+  background-image: url("/assets/home/hero-img-1.png");
+  min-height: 36.25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+}
+
+.indicator-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  position: absolute;
+  bottom: 1rem;
+  width: max-content;
+  margin-inline: auto;
+  left: 0;
+  right: 0;
+}
+
+.indicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: var(--primary-color);
+}
+
+/* .carousel--img {
+  width: 100%;
+  object-fit: cover;
+} */
+
+/* Home Second Section */
+.home-second-section {
+  margin-top: 9.25rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+}
+
+.home-second-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.home-about-content-container {
+  border: 0.0625rem solid var(--secondary-color);
+  border-bottom: none;
+  max-width: 37rem;
+  min-height: 46.125rem;
+  padding-inline: 6.6875rem;
+  padding-top: 5rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.home-about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-about-btn {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.home-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font: var(--regular) var(--btn) var(--body-font);
+  padding-block: 0.625rem;
+  width: 100%;
+  max-width: 18.125rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Right side container */
+.home-service-bible_verse-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 37rem;
+  width: 100%;
+}
+
+.service-container {
+  padding-top: 4.375rem;
+  padding-inline: 6.812rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 1.5rem;
+  min-height: 16.687rem;
+  padding-bottom: 5.062rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.service-time-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.25rem;
+  align-items: center;
+  text-align: left;
+}
+
+.service-time-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-time-content {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.service-time--p {
+  color: var(--primary-color);
+  font: var(--regular) var(--btn) var(--body-font);
+}
+
+.bible_verse-container {
+  padding-top: 6.125rem;
+  padding-inline: 3.687rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 1.5rem;
+  min-height: 16.687rem;
+  padding-bottom: 4.187rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.bible_verse_content-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.bible_verse-heading {
+  font: var(--bold) var(--btn) var(--body-font);
+}
+
+.bible_verse-highlight {
+  color: var(--primary-color);
+}
+
+.bible_verse-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.bible_verse--p {
+  font: var(--regular) var(--btn) var(--body-font);
+}
+
+/* Home ministries */
+.home-ministries-section {
+  max-width: 77rem;
+  margin-inline: auto;
+  margin-top: 9.25rem;
+  text-align: center;
+  width: 98%;
+}
+
+.home-ministries-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.875rem;
+}
+
+.home-ministries-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.home-ministries-card,
+.home-department-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.home-ministries-card--img {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.home-ministries-card-title {
+  font: var(--bold) var(--h6) var(--body-font);
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  min-height: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+.home-department-section {
+  margin-top: 9.25rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+}
+
+.home-department-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.875rem;
+  text-align: center;
+}
+
+.home-department-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.home-department-card--img {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.home-department-card-title {
+  font: var(--bold) var(--h6) var(--body-font);
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  min-height: 4.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About us */
+/* header */
+.founder-past-leader--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/about-us/header.png");
+}
+
+/* Content Container */
+.header__content-container {
+  min-height: 16.625rem;
+  max-width: 63.625rem;
+  background-color: var(--white-color);
+  position: absolute;
+  top: 8.375rem;
+  border-bottom: 0.0625rem solid #000;
+  padding: 2.125rem 6.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.header__content--body_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* foudner_section */
+.founder__section--container {
+  margin-top: 11.875rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10.125rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+  flex-wrap: wrap;
+}
+
+.founder--img {
+  border-radius: 0.75rem;
+  object-fit: cover;
+  max-width: 29.25rem;
+  width: 100%;
+  object-position: center;
+}
+
+.founder__content_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 37rem;
+}
+
+.founder-content_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+}
+
+.past-leader_section {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.875rem;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.past-leader_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.past-leader_card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 17.062rem;
+}
+
+.card--img {
+  border-radius: 0.75rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.committee-member_section {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.875rem;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.committee-member_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-inline: auto;
+  max-width: 77.25rem;
+  justify-content: center;
+}
+
+.committee-member_card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 17.062rem;
+}
+
+/* About us */
+.about-us__section--container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.125rem;
+  max-width: 77rem;
+  margin-top: 12.125rem;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+}
+
+.about-us__content_container {
+  max-width: 40.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 95%;
+}
+
+.about-us-content_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.about-us--img {
+  border-radius: 0.75rem;
+  object-fit: cover;
+  width: 100%;
+  max-width: 30.312rem;
+}
+
+/* Our Leadersip Section */
+.our-leadership-section {
+  margin-top: 8rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.our-leadership-container {
+  display: flex;
+  margin-top: 4.875rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8rem;
+  width: 98%;
+}
+
+.president_container {
+  display: flex;
+  gap: 9.125rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-leader--img {
+  border-radius: 0.75rem;
+  max-width: 29.312rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.president-content_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 37rem;
+  text-align: left;
+  width: 95%;
+}
+
+.president-title-header_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.president-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+}
+
+.leadership-member_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.375rem;
+  justify-content: center;
+}
+
+.card-leadership-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.card-leadership--img {
+  border-radius: 0.75rem;
+  object-fit: fill;
+  width: 100%;
+}
+
+.card-leadership-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.mission-vision-section {
+  margin-top: 8rem;
+  text-align: center;
+  max-width: 77rem;
+  margin-inline: auto;
+}
+
+.mission-vision-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  color: var(--white-color);
+  margin-top: 4.875rem;
+  width: 98%;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.mission-container,
+.vision-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+  padding: 3.125rem 8.687rem;
+  background-color: var(--secondary-color);
+  border-radius: 1.5rem;
+  text-align: left;
+}
+
+.mission-vision_heading {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.content-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Zone */
+.grid-4-section {
+  margin-top: 11.875rem;
+  max-width: 77rem;
+  margin-inline: auto;
+}
+
+.grid-4-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-4-card-container {
+  max-width: 17rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grid-4-card--img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.zone-img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/header.png");
+}
+
+/* Zones sub-page */
+/* Header */
+.colachel--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/colachel/header.png");
+}
+
+.kanyakumari--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/kanyakumari/header.png");
+}
+
+.killiyoor--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/killiyoor/header.png");
+}
+
+.kollemcode--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/kollencode/header.png");
+}
+
+.nagercoil--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/nagercoil/header.png");
+}
+
+.padmanadapuram--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/padmanadapuram/header.png");
+}
+
+.thiruvattar--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/thiruvattar/header.png");
+}
+
+.vilavancode--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/zone/vilavancode/header.png");
+}
+
+/*  */
+.zone-president-section {
+  margin-top: 11.875rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+}
+
+.president-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.zone-president--img {
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 23.75rem;
+  object-fit: cover;
+}
+
+.president-content-container {
+  max-width: 50.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.body-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.zone-member-section {
+  margin-top: 6.125rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+}
+
+.zone-member-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.zone-member-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.zome-member--img {
+  border-radius: 0.75rem;
+}
+
+.zone-member-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Ministries */
+.ministries--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/ministries/header.png");
+}
+
+.section-container {
+  margin-top: 11.875rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  display: flex;
+  gap: 3rem;
+  row-gap: 3.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 98%;
+}
+
+.container-link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 23.625rem;
+}
+
+.content--img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.heading-title--h2 {
+  font: var(--regular) var(--nav) var(--body-font);
+  padding-block: 1.25rem;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+/* Ministries sub page */
+/*  */
+.ministers-blog-section {
+  margin-top: 11.875rem;
+  margin-inline: auto;
+  max-width: 77rem;
+}
+
+.ministries-blog-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  row-gap: 3.75rem;
+  justify-content: center;
+}
+
+.ministries-blog-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  max-width: 37rem;
+}
+
+.ministries-blog--img {
+  max-width: 10.312rem;
+  object-fit: cover;
+}
+
+.ministries-blog-content-container {
+  max-width: 23.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ministries-blog-content-brief {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ministries-blog-link {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font: var(--regular) var(--btn) var(--body-font);
+  text-decoration: none;
+  max-width: 6.875rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Sub page of blog */
+.ministry-blog-section {
+  max-width: 77rem;
+  margin-top: 7.625rem;
+  margin-inline: auto;
+}
+
+.ministry-blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.ministries-sub-blog--img {
+  max-width: 77rem;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1rem;
+  object-position: center center;
+}
+
+.ministry-blog-content-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ministry-blog-body-content-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Event */
+.event--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/event/header.png");
+}
+
+.event-section {
+  margin-top: 11.875rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+}
+
+.event-container {
+  display: flex;
+  gap: 5.125rem;
+  flex-wrap: wrap;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4.875rem;
+}
+
+.calendar-container {
+  border: 0.0625rem solid #000;
+  padding: 1.875rem;
+  max-width: 36.75rem;
+  border-radius: 0.75rem;
+}
+
+.calendar-header-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-header {
+  font: 900 var(--h5) var(--body-font);
+}
+
+.calendar-arrow-control {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.calendar--btn {
+  border: 0;
+  background-color: var(--white-color);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.calendar-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.week-day {
+  padding: 1.25rem;
+  font: 600 var(--nav) var(--body-font);
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  padding: 1.25rem;
+  border: 0.0625rem solid #d5d4df;
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--regular) var(--nav) var(--body-font);
+}
+
+.calendar-day.active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.calendar-day.dimmed {
+  color: #a8a8a8;
+}
+
+.recent-event,
+.main-event {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.recent-events-container,
+.main-events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.recent-event-card,
+.main-event-card {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.recent-event--img,
+.main-event--img {
+  border-radius: 0.75rem;
+}
+
+.recent-event-content-container,
+.main-event-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recent-event-header-container,
+.main-event-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.recent-event-heading,
+.main-event-heading {
+  font: var(--bold) var(--btn) var(--body-font);
+}
+
+.recent-event-header-time,
+.main-event-header-time {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.recent-event-date,
+.main-event-date {
+  color: var(--red-color);
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.recent-event-time,
+.main-event-time {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.recent-event-place,
+.main-event-place {
+  font: var(--regular) var(--btn) var(--body-font);
+}
+
+.recent-event-description,
+.main-event-description {
+  font: var(--regular) var(--body-text) var(--body-font);
+}
+
+.right-col {
+  border-left: 0.0625rem solid #000;
+  padding-left: 4.875rem;
+}
+
+/* Department */
+.department--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/header.png");
+}
+
+.department-container {
+  justify-content: left;
+}
+
+/* sub page */
+.department-member-section,
+.commission-member-section {
+  margin-top: 11.875rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+}
+
+.department-member-container,
+.commission-member-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.75rem;
+}
+
+.department-info-content-container,
+.commission-info-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  border-right: 0.0625rem solid var(--secondary-color);
+  padding-right: 3rem;
+}
+
+.department-info--img,
+.commission-info--img {
+  border-radius: 1.5rem;
+  max-width: 30.312rem;
+  max-height: 19rem;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+
+.department-info-body-container,
+.commission-info-body-container {
+  max-width: 30.312rem;
+}
+
+.department-member-info-container,
+.commission-member-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.department-card-container,
+.commission-card-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.department-card--img,
+.commission-card--img {
+  border-radius: 0.75rem;
+  max-width: 10.312rem;
+}
+
+.department-card-content-container,
+.commission-card-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.department-card-header-container,
+.commission-card-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.department-member-title,
+.commission-member-title {
+  font: var(--regular) var(--nav) var(--body-font);
+}
+
+.department-contact,
+.commission-contact {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.children-department--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/children-development-department/header.png");
+}
+
+.education-department--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/education-department/header.png");
+}
+
+.evangelical-department--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/evangelical-department/header.png");
+}
+
+.family-welfare-department--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/family-welfare-department/header.png");
+}
+
+/* Gallery */
+.gallery--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/gallery/header.png");
+}
+
+.gallery-content-section {
+  margin-top: 11.875rem;
+  max-width: 77rem;
+  margin-inline: auto;
+}
+
+.gallery-content-container {
+  /* display: grid;
+  grid-template-columns: repeat(4,1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.gallery-content--img{
+  max-width: 17rem;
+  max-height: 15.75rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Councils */
+.councils--img {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/councils/header.png");
+}
+
+.councils-section {
+  max-width: 77rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7.75rem;
+  margin-top: 11.875rem;
+}
+
+/* Council President Section */
+.councils-president-container {
+  max-width: 68.375rem;
+  margin-inline: auto;
+  display: flex;
+  gap: 7.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.council-content--img {
+  border-radius: 0.75rem;
+  max-width: 23.625rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.council-president-container {
+  max-width: 36.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.council-president-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.council-member-container,
+.council-other-member-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.council-member-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 17rem;
+}
+
+.council-member--img {
+  border-radius: 0.75rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.council-member-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.council-other-member-section {
+  max-width: 77rem;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 7.75rem;
+}
+
+.council-other-member-container {
+  margin-top: 4.875rem;
+  text-align: left;
+}
+
+/* Contact us */
+.header-contact-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.header-contact-link {
+  text-decoration: none;
+  color: #000060;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-us-church-section {
+  margin-top: 11.875rem;
+  max-width: 77rem;
+  margin-inline: auto;
+  width: 98%;
+}
+
+.contact-us-church-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  row-gap: 4.25rem;
+}
+
+.contact-us-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+}
+
+.contact-us-card--img {
+  border-radius: 0.75rem;
+}
+
+.contact-us-card-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 17rem;
+}
+
+.contact-us-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-us-phone {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #000060;
+  font: var(--regular) var(--btn) var(--body-font);
+}
+
+/* Responsive */
+
+@media (max-width: 81rem) {
+  .about-us--img {
+    width: 100%;
+    max-block-size: 31.25rem;
+    max-width: none;
+  }
+
+  .about-us__content_container {
+    max-width: none;
+  }
+  .event-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 78.562rem) {
+  .home-second-container,
+  .home-ministries-card-container,
+  .home-department-card-container {
+    justify-content: center;
+  }
+  .contact-us-church-container {
+    justify-content: center;
+  }
+  .zone-member-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 77.937rem) {
+  .founder--img {
+    max-width: none;
+    max-height: 37.5rem;
+  }
+}
+
+@media (max-width: 77rem) {
+  .department-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 75.75rem) {
+  .navbar--navbar {
+    display: none;
+  }
+
+  .mobile-view--nav {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: relative;
+  }
+}
+@media (max-width: 66.25rem) {
+  .right-col {
+    padding-left: 3.5rem;
+  }
+}
+@media (max-width: 66rem) {
+  .department-member-container,
+  .commission-member-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .department-info-content-container,
+  .commission-info-content-container {
+    border-right: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 64.875rem) {
+  .event-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-col {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 63.625rem) {
+  .header__content-container {
+    padding: 2.125rem 2.625rem;
+  }
+}
+
+@media (max-width: 42.937rem) {
+  .footer-container {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .founder__section--container {
+    margin-top: 16.375rem;
+  }
+}
+
+@media (max-width: 37.812rem) {
+  .home-about-btn {
+    width: 100%;
+  }
+
+  .home-btn {
+    max-width: 100%;
+  }
+  .contact-us-card-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 34.187rem) {
+  .department-member-section,
+  .commission-member-section {
+    margin-top: 15.875rem;
+  }
+}
+
+@media (max-width: 34.125rem) {
+  .section-container {
+    margin-top: 14.5rem;
+  }
+
+  .ministers-blog-section {
+    margin-top: 16.375rem;
+  }
+  .event-section {
+    margin-top: 16.375rem;
+  }
+}
+
+@media (max-width: 32.75rem) {
+  .service-container {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+    padding-inline: 3.875rem;
+  }
+
+  .service-time-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .bible_verse-container {
+    padding-top: 3.25rem;
+  }
+
+  .mission-container,
+  .vision-container {
+    padding: 3.125rem 3.5rem;
+  }
+  .department-member-section,
+  .commission-member-section {
+    margin-top: 20.875rem;
+  }
+  .calendar-container {
+    padding: 1rem;
+  }
+  .week-day,
+  .calendar-day {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 30.312rem) {
+  .about-us__section--container {
+    margin-top: 18.125rem;
+  }
+
+  .grid-4-section {
+    margin-top: 15.5rem;
+  }
+}
+
+@media (max-width: 29.562rem) {
+  .ministries-blog-card {
+    justify-content: center;
+  }
+  .zone-president-section {
+    margin-top: 15.75rem;
+  }
+}
+
+@media (max-width: 27.437rem) {
+  .service-time-content {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 26.562rem) {
+  .home-about-content-container {
+    padding-inline: 3.375rem;
+  }
+
+  .founder__section--container {
+    margin-top: 17.625rem;
+  }
+}
+
+@media (max-width: 25.875rem) {
+  .founder__section--container {
+    margin-top: 20.5rem;
+  }
+
+  .section-container {
+    margin-top: 17.625rem;
+  }
+
+  .grid-4-section {
+    margin-top: 17.125rem;
+  }
+
+  .ministers-blog-section {
+    margin-top: 20.75rem;
+  }
+  .contact-us-church-section {
+    margin-top: 15.125rem;
+  }
+  .calendar-container {
+    padding: 0.75rem;
+  }
+  .week-day,
+  .calendar-day {
+    padding: 0.75rem;
+  }
+}
+@media (max-width: 25.062rem) {
+  .department-card-container,
+  .commission-card-container {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media (max-width: 24rem) {
+  .department-member-section,
+  .commission-member-section {
+    margin-top: 23.875rem;
+  }
+}
+@media (max-width: 23.437rem) {
+  .about-us__section--container {
+    margin-top: 20rem;
+  }
+  .zone-president-section {
+    margin-top: 19.75rem;
+  }
+}
+
+@media (max-width: 22.375rem) {
+  .founder__section--container {
+    margin-top: 24.625rem;
+  }
+
+  .section-container {
+    margin-top: 19.875em;
+  }
+
+  .grid-4-section {
+    margin-top: 19.75rem;
+  }
+  .councils-section {
+    margin-top: 16.5rem;
+  }
+  .contact-us-church-section {
+    margin-top: 17rem;
+  }
+  .department-member-section,
+  .commission-member-section {
+    margin-top: 26.625rem;
+  }
+  .event-section {
+    margin-top: 22.375rem;
+  }
 }

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanyakumari</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/assets/logo/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar--navbar">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="/"> <img src="/assets/logo/logo.svg" alt="logo" /></a>
+            <div class="logo-container-content-container">
+                <a class="logo-container-content" href="tel:+9195874 58748">
+                    <img src="/assets/icon/phone-black.svg" alt="phone-icon" />
+                    <p>+91 95874 58741</p>
+                </a>
+                <a class="logo-container-content" href="mailto:sample@mail.com">
+                    <img src="/assets/icon/mail-black.svg" alt="mail-icon" />
+                    <p>sample@mail.com</p>
+                </a>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div class="nav-menu-container">
+            <ul class="menu-container">
+                <li class="menu-item">
+                    <a href="/" class="menu-item_link">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-item_link menu-item_link_dropdown">
+                        About us
+                        <i class="fa-solid fa-caret-down"></i>
+                        <!-- About us dropdown menu -->
+                        <ul class="dropdown-menu active">
+                            <li class="dropdown-menu-item">
+                                <a href="/about-us.html" class="dropdown-menu-item_link">
+                                    About us</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/founder-and-past-leader.html" class="dropdown-menu-item_link">
+                                    Founder and Past Leader
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-item_link menu-item_link_dropdown">
+                        Ministries
+                        <i class="fa-solid fa-caret-down"></i>
+                        <!-- Ministries dropdown menu -->
+                        <ul class="dropdown-menu active">
+                            <li class="dropdown-menu-item">
+                                <a href="/ministries.html" class="dropdown-menu-item_link">
+                                    Ministries
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/ministries/adults.html" class="dropdown-menu-item_link">
+                                    Adults
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/ministries/children.html" class="dropdown-menu-item_link">
+                                    Children
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/ministries/elder-member.html" class="dropdown-menu-item_link">
+                                    Elder Member
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/ministries/family.html" class="dropdown-menu-item_link">
+                                    Family
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/ministries/worship.html" class="dropdown-menu-item_link">
+                                    Worship
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/ministries/youth.html" class="dropdown-menu-item_link">
+                                    Youth
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/event.html" class="menu-item_link">Events</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-item_link menu-item_link_dropdown">
+                        Zones
+                        <i class="fa-solid fa-caret-down"></i>
+                        <!-- Zones dropdown menu -->
+                        <ul class="dropdown-menu active">
+                            <li class="dropdown-menu-item">
+                                <a href="/zones.html" class="dropdown-menu-item_link">Zones</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/zone/colachel.html" class="dropdown-menu-item_link">Colachel
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/zone/kanyakumari.html" class="dropdown-menu-item_link active">Kanyakumari</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/zone/killiyoor.html" class="dropdown-menu-item_link">Killiyoor
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/zone/kollemcode.html" class="dropdown-menu-item_link">Kollemcode</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/zone/nagercoil.html" class="dropdown-menu-item_link">Nagercoil
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/zone/padmanadapuram.html" class="dropdown-menu-item_link">Padmanadapuram</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/zone/thiruvattar.html" class="dropdown-menu-item_link">Thiruvattar
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/zone/vilavancode.html" class="dropdown-menu-item_link">Vilavancode
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-item_link menu-item_link_dropdown">
+                        Departments
+                        <i class="fa-solid fa-caret-down"></i>
+                        <!-- Departments -->
+                        <ul class="dropdown-menu active">
+                            <li class="dropdown-menu-item">
+                                <a href="/department.html" class="dropdown-menu-item_link">Departments</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/children-development-department.html"
+                                    class="dropdown-menu-item_link">
+                                    Children Development Department
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/education-department.html" class="dropdown-menu-item_link">
+                                    Education Department</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/evangelical-department.html" class="dropdown-menu-item_link">
+                                    Evangelical Department
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/family-welfare-department.html" class="dropdown-menu-item_link">
+                                    Family Welfare Department
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/legal-affair-department.html" class="dropdown-menu-item_link">
+                                    Legal Affair Department
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/literature-department.html" class="dropdown-menu-item_link">
+                                    Literature Department</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/media-department.html" class="dropdown-menu-item_link">
+                                    Media Department
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/missionary-department.html" class="dropdown-menu-item_link">
+                                    Missionary Department</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/pastor-welfare-department.html" class="dropdown-menu-item_link">
+                                    Pastor's Welfare Department
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/prayer-co-ordination-department.html"
+                                    class="dropdown-menu-item_link">Prayer Co-ordination Department</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/public-health-department.html" class="dropdown-menu-item_link">
+                                    Public Health Department
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/social-service-department.html"
+                                    class="dropdown-menu-item_link">Social Service Department</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/theological-department.html" class="dropdown-menu-item_link">
+                                    Theological Department
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/women-development-department.html" class="dropdown-menu-item_link">
+                                    Women Development Department</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/department/youth-department.html" class="dropdown-menu-item_link">
+                                    Youth Department
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-item_link menu-item_link_dropdown">
+                        Commissions
+                        <i class="fa-solid fa-caret-down"></i>
+                        <!-- Commission dropdown menu -->
+                        <ul class="dropdown-menu active">
+                            <li class="dropdown-menu-item">
+                                <a href="/commission.html" class="dropdown-menu-item_link">Commissions</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/commission/election-commission.html" class="dropdown-menu-item_link">
+                                    Election Commission
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/commission/establishment-comission.html" class="dropdown-menu-item_link">
+                                    Establishment Commission</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="/commission/inspection-commission.html" class="dropdown-menu-item_link">
+                                    Inspection Commission
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/councils.html" class="menu-item_link">Councils</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/gallery.html" class="menu-item_link">Gallery</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/contact-us.html" class="menu-item_link">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+     <!-- Mobile -->
+  <nav class="mobile-view--nav">
+    <div class="mobile-view-container">
+      <img src="/assets/logo/logo.svg" alt="logo" class="mobile-view--img">
+      <a href="#" class="menu-icon"><i class="fa-solid fa-bars"></i></a>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="nav-mobile-menu-container">
+      <div class="nav-mobile-menu">
+        <ul class="mobile-menu-container">
+          <li class="menu-item">
+            <a href="/" class="menu-item_link">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-item_link menu-item_link_dropdown">
+              About us
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+
+              <!-- About us dropdown menu -->
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu-item">
+                  <a href="/about-us.html" class="dropdown-menu-item_link">
+                    About us</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/founder-and-past-leader.html" class="dropdown-menu-item_link">
+                    Founder and Past Leader
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-item_link menu-item_link_dropdown">
+              Ministries
+              <i class="fa-solid fa-caret-down"></i>
+              <!-- Ministries dropdown menu -->
+              <ul class="dropdown-menu active">
+                <li class="dropdown-menu-item">
+                  <a href="/ministries.html" class="dropdown-menu-item_link">
+                    Ministries
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/ministries/adults.html" class="dropdown-menu-item_link">
+                    Adults
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/ministries/children.html" class="dropdown-menu-item_link">
+                    Children
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/ministries/elder-member.html" class="dropdown-menu-item_link">
+                    Elder Member
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/ministries/family.html" class="dropdown-menu-item_link">
+                    Family
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/ministries/worship.html" class="dropdown-menu-item_link">
+                    Worship
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/ministries/youth.html" class="dropdown-menu-item_link">
+                    Youth
+                  </a>
+                </li>
+              </ul>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/event.html" class="menu-item_link">Events</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-item_link menu-item_link_dropdown">
+              Zones
+              <i class="fa-solid fa-caret-down"></i>
+              <!-- Zones dropdown menu -->
+              <ul class="dropdown-menu active">
+                <li class="dropdown-menu-item">
+                  <a href="/zones.html" class="dropdown-menu-item_link">Zones</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/zone/colachel.html" class="dropdown-menu-item_link">Colachel
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/zone/kanyakumari.html" class="dropdown-menu-item_link active">Kanyakumari</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/zone/killiyoor.html" class="dropdown-menu-item_link">Killiyoor
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/zone/kollemcode.html" class="dropdown-menu-item_link">Kollemcode</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/zone/nagercoil.html" class="dropdown-menu-item_link">Nagercoil
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/zone/padmanadapuram.html" class="dropdown-menu-item_link">Padmanadapuram</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/zone/thiruvattar.html" class="dropdown-menu-item_link">Thiruvattar
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/zone/vilavancode.html" class="dropdown-menu-item_link">Vilavancode
+                  </a>
+                </li>
+              </ul>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-item_link menu-item_link_dropdown">
+              Departments
+              <i class="fa-solid fa-caret-down"></i>
+              <!-- Departments -->
+              <ul class="dropdown-menu active">
+                <li class="dropdown-menu-item">
+                  <a href="/department.html" class="dropdown-menu-item_link">Departments</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/children-development-department.html" class="dropdown-menu-item_link">
+                    Children Development Department
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/education-department.html" class="dropdown-menu-item_link">
+                    Education Department</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/evangelical-department.html" class="dropdown-menu-item_link">
+                    Evangelical Department
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/family-welfare-department.html" class="dropdown-menu-item_link">
+                    Family Welfare Department
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/legal-affair-department.html" class="dropdown-menu-item_link">
+                    Legal Affair Department
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/literature-department.html" class="dropdown-menu-item_link">
+                    Literature Department</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/media-department.html" class="dropdown-menu-item_link">
+                    Media Department
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/missionary-department.html" class="dropdown-menu-item_link">
+                    Missionary Department</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/pastor-welfare-department.html" class="dropdown-menu-item_link">
+                    Pastor's Welfare Department
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/prayer-co-ordination-department.html" class="dropdown-menu-item_link">Prayer
+                    Co-ordination Department</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/public-health-department.html" class="dropdown-menu-item_link">
+                    Public Health Department
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/social-service-department.html" class="dropdown-menu-item_link">Social Service
+                    Department</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/theological-department.html" class="dropdown-menu-item_link">
+                    Theological Department
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/women-development-department.html" class="dropdown-menu-item_link">
+                    Women Development Department</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/department/youth-department.html" class="dropdown-menu-item_link">
+                    Youth Department
+                  </a>
+                </li>
+              </ul>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-item_link menu-item_link_dropdown">
+              Commissions
+              <i class="fa-solid fa-caret-down"></i>
+              <!-- Commission dropdown menu -->
+              <ul class="dropdown-menu active">
+                <li class="dropdown-menu-item">
+                  <a href="/commission.html" class="dropdown-menu-item_link">Commissions</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/commission/election-commission.html" class="dropdown-menu-item_link">
+                    Election Commission
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/commission/establishment-comission.html" class="dropdown-menu-item_link">
+                    Establishment Commission</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="/commission/inspection-commission.html" class="dropdown-menu-item_link">
+                    Inspection Commission
+                  </a>
+                </li>
+              </ul>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/councils.html" class="menu-item_link">Councils</a>
+          </li>
+          <li class="menu-item">
+            <a href="/gallery.html" class="menu-item_link">Gallery</a>
+          </li>
+          <li class="menu-item">
+            <a href="/contact-us.html" class="menu-item_link">Contact us</a>
+          </li>
+        </ul>
+        <div class="logo-mobilecontainer-content-container">
+          <a class="logo-mobile-container-content" href="tel:+9195874 58748">
+            <i class="fa-solid fa-phone fa-xs"></i>
+            <p class="body_text--p">+91 95874 58741</p>
+          </a>
+          <a class="logo-mobile-container-content" href="mailto:sample@mail.com">
+            <i class="fa-solid fa-envelope fa-xs"></i>
+            <p class="body_text--p">sample@mail.com</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
+    <!-- Main Section -->
+    <header class="header__wrapper">
+        <div class="header__container">
+            <div class="header--img kanyakumari--img">
+                <!-- Content Container -->
+                <div class="header__content-container">
+                    <h1 class="heading--h1">Kanyakumari</h1>
+                    <div class="header__content--body_container">
+                        <p class="body_text--p">
+                            During the period when Pentecostal ministries were growing in
+                            Kanyakumari district, in the year 1984, according to the vision
+                            given by the Lord to Pr. Y.S. Devasundaram, other servants of
+                            God Pastor N Thomas, Pastor Isaac Christian gathered together in
+                            prayer and formed a fellowship called "Deva Uzhiayar Aikkiyam
+                            Njt Copah; If;fpak; " (Pastors Fellowship) to help unite
+                            Pentecostal ministers in prayer and fellowship. The Lord, who
+                            initiated this fellowship, has graciously continued it to this
+                            day.
+                        </p>
+                        <p class="body_text--p">
+                            The transition from the Pastors Fellowship to the Federation of
+                            Pentecostal Churches (FPC) in 3.10.2006 marked a key moment of
+                            structural and organizational development for the group. With
+                            this shift, the leadership also expanded, with several key
+                            individuals taking on roles that would help steer the vision and
+                            growth of the FPC.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Zone President -->
+    <section class="zone-president-section">
+        <div class="president-container">
+            <img src="/assets/zone/kanyakumari/president.png" alt="president" class="zone-president--img" />
+            <div class="president-content-container">
+                <div class="header-content-container">
+                    <h2 class="heading--h3">PR.S. AMALARAJAN</h2>
+                    <p class="card-zone-title">President</p>
+                </div>
+                <div class="body-content-container">
+                    <p class="body_text--p">
+                        Lorem ipsum dolor sit amet consectetur. Pretium ultricies eu massa
+                        libero pellentesque id pretium. Pharetra gravida ipsum egestas
+                        dictumst in mauris risus fermentum hac. Vitae sollicitudin tellus
+                        mauris cursus. Etiam ullamcorper morbi eleifend turpis dolor lacus
+                        ut eros. Velit id orci varius posuere euismod ut. At id ultricies
+                        enim fermentum eu consequat. Lacus enim tempus nunc venenatis
+                        elementum fusce sollicitudin tellus sit. Pellentesque elementum
+                        integer augue orci dis tortor in cursus augue. Sed habitasse
+                        aliquam hendrerit vitae pulvinar pulvinar suspendisse scelerisque
+                        eget. Enim orci pellentesque nunc vitae donec. Proin scelerisque
+                        dignissim lacus quam nisl neque morbi dignissim neque.
+                    </p>
+                    <p class="body_text--p">
+                        Lorem ipsum dolor sit amet consectetur. Pretium ultricies eu massa
+                        libero pellentesque id pretium. Pharetra gravida ipsum egestas
+                        dictumst in mauris risus fermentum hac. Vitae sollicitudin tellus
+                        mauris cursus. Etiam ullamcorper morbi eleifend turpis dolor lacus
+                        ut eros. Velit id orci varius posuere euismod ut. At id ultricies
+                        enim fermentum eu consequat. Lacus enim tempus nunc venenatis
+                        elementum fusce sollicitudin tellus sit. Pellentesque elementum
+                        integer augue orci dis tortor in cursus augue. Sed habitasse
+                        aliquam hendrerit vitae pulvinar pulvinar suspendisse scelerisque
+                        eget. Enim orci pellentesque nunc vitae donec. Proin scelerisque
+                        dignissim lacus quam nisl neque morbi dignissim neque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- member section -->
+    <section class="zone-member-section">
+        <div class="zone-member-container">
+            <div class="zone-member-content-container">
+                <img src="/assets/zone/kanyakumari/vice-president.png" alt="vice-president" class="zome-member--img" />
+                <div class="zone-member-content">
+                    <h3 class="card-about-member-title">Pr. M. Yesu dhas</h3>
+                    <p class="body_text--p">Vice President</p>
+                </div>
+            </div>
+            <div class="zone-member-content-container">
+                <img src="/assets/zone/kanyakumari/secretary.png" alt="secretary" class="zome-member--img" />
+                <div class="zone-member-content">
+                    <h3 class="card-about-member-title">Pr. M. Antony Raj</h3>
+                    <p class="body_text--p">Secretary</p>
+                </div>
+            </div>
+            <div class="zone-member-content-container">
+                <img src="/assets/zone/kanyakumari/joint-secretary.png" alt="joint-secretary"
+                    class="zome-member--img" />
+                <div class="zone-member-content">
+                    <h3 class="card-about-member-title">Pr. J. Peter</h3>
+                    <p class="body_text--p">Joint Secretary</p>
+                </div>
+            </div>
+            <div class="zone-member-content-container">
+                <img src="/assets/zone/kanyakumari/treasurer.png" alt="treasurer" class="zome-member--img" />
+                <div class="zone-member-content">
+                    <h3 class="card-about-member-title">Pr. D. Rajkumar </h3>
+                    <p class="body_text--p">Treasurer</p>
+                </div>
+            </div>
+
+            <div class="zone-member-content-container">
+                <img src="/assets/zone/kanyakumari/committee-member-1.png" alt="committee-member"
+                    class="zome-member--img" />
+                <div class="zone-member-content">
+                    <h3 class="card-about-member-title">Pr. I. Sathya Seelan </h3>
+                    <p class="body_text--p">Committee Member</p>
+                </div>
+            </div>
+            <div class="zone-member-content-container">
+                <img src="/assets/zone/kanyakumari/committee-member-2.png" alt="committee-member"
+                    class="zome-member--img" />
+                <div class="zone-member-content">
+                    <h3 class="card-about-member-title">Pr. S.Suresh</h3>
+                    <p class="body_text--p">Committee Member</p>
+                </div>
+            </div>
+            <div class="zone-member-content-container">
+                <img src="/assets/zone/kanyakumari/committee-member-3.png" alt="committee-member"
+                    class="zome-member--img" />
+                <div class="zone-member-content">
+                    <h3 class="card-about-member-title">Pr. T. Titus durai singh </h3>
+                    <p class="body_text--p">Committee Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-bg_color">
+        <div class="footer-container">
+            <a href="/" class="footer-menu-link">
+                <img src="/assets/logo/logo.svg" alt="logo" class="footer--img" />
+            </a>
+            <div class="footer-content-container">
+                <h2 class="footer-heading">Quick Link</h2>
+                <ul class="footer-menu-container">
+                    <li class="footer-menu-item">
+                        <a href="/about-us.html" class="footer-menu-link">About us</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/ministries.html" class="footer-menu-link">Ministries</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/event.html" class="footer-menu-link">Events</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/gallery.html" class="footer-menu-link">Gallery</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/contact-us.html" class="footer-menu-link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-content-container">
+                <h2 class="footer-heading">Our</h2>
+                <ul class="footer-menu-container">
+                    <li class="footer-menu-item">
+                        <a href="/zones.html" class="footer-menu-link">Zones</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/commission.html" class="footer-menu-link">Commissions</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/department.html" class="footer-menu-link">Department</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="/councils.html" class="footer-menu-link">Councils</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-content-container">
+                <h2 class="footer-heading">Follow us on</h2>
+                <ul class="footer-social-menu-container">
+                    <li class="footer-menu-item">
+                        <a href="https://facebook.com" class="footer-menu-link" target="_blank"><img
+                                src="/assets/icon/facebook.svg" alt="facebook-icon"></a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="https://twitter.com" class="footer-menu-link" target="_blank"><img
+                                src="/assets/icon/twitter.svg" alt="twitter-icon"></a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="https://instagram.com" class="footer-menu-link" target="_blank"><img
+                                src="/assets/icon/instagram.svg" alt="instagram-icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>    <hr class="footer-hr">
+    <div class="footer-copyright-content">
+      <p class="body_text--p">Copyright 2024 Federation of Pentecostal Churches</p>
+    </div>
+    </footer>
+</body>
+<script src="/main.js"></script>
+
+</html>
