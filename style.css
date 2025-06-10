@@ -916,7 +916,7 @@
     url("/assets/zone/killiyoor/header.png");
 }
 
-.kollemcode--img {
+.kollencode--img {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 71),
@@ -1341,6 +1341,31 @@
   border-left: 0.0625rem solid #000;
   padding-left: 4.875rem;
 }
+/* Commission */
+.election-commission--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/commission/election-commission/header.png");
+}
+.establishment-commission--img{
+      background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/commission/establishment-commission/header.png");
+}
+.inspection-commission--img{
+      background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/commission/inspection-commission/header.png");
+}
 
 /* Department */
 .department--img {
@@ -1480,6 +1505,94 @@
       rgba(0, 0, 0, 0)
     ),
     url("/assets/department/family-welfare-department/header.png");
+}
+.legal-affair-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/legal-affair-department/header.png");
+}
+.literature-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/literature-department/header.png");
+}
+.media-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/media-department/header.png");
+}
+.missionary-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/missionary-department/header.png");
+}
+.pastor-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/pastor-welfare-department/header.png");
+}
+.prayer-co-ordination-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/prayer-co-ordination-department/header.png");
+}
+.public-health-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/public-health-department/header.png");
+}
+.social-service-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/scoial-service-department/header.png");
+}
+.theological-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/theological-department/header.png");
+}
+.women-development-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/woman-development-department/header.png");
+}
+.youth-department--img{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 71),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/department/youth-department/header.png");
 }
 
 /* Gallery */
