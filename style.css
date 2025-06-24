@@ -361,8 +361,9 @@
   border: 0.0625rem solid var(--secondary-color);
   border-bottom: none;
   max-width: 37rem;
-  min-height: 46.125rem;
+  /* min-height: 46.125rem; */
   padding-inline: 6.6875rem;
+  padding-bottom: 3rem;
   padding-top: 5rem;
   display: flex;
   gap: 3rem;
@@ -1419,6 +1420,9 @@
 .department-info-body-container,
 .commission-info-body-container {
   max-width: 30.312rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .department-member-info-container,
